@@ -33,19 +33,27 @@ for (let i = 0; i < particleCount; i++) {
 
 const workCards = document.querySelectorAll('.work-card');
 
-workCards.forEach(card => {
-    const buttonWrapper = card.querySelector('.work-card-button-wraper');
+// Обрабатываем наведение только на устройствах с мышью
+const hasHover = window.matchMedia(
+    '(hover: hover) and (pointer: fine)'
+).matches;
 
-    card.addEventListener('mouseenter', () => {
-        buttonWrapper.style.opacity = '1';
-        buttonWrapper.style.visibility = 'visible';
-        buttonWrapper.style.transform = 'translateY(0)';
+if (hasHover) {
+    workCards.forEach(card => {
+        const buttonWrapper = card.querySelector(
+            '.work-card-button-wraper'
+        );
+
+        card.addEventListener('mouseenter', () => {
+            buttonWrapper.style.opacity = '1';
+            buttonWrapper.style.visibility = 'visible';
+            buttonWrapper.style.transform = 'translateY(0)';
+        });
+
+        card.addEventListener('mouseleave', () => {
+            buttonWrapper.style.opacity = '0';
+            buttonWrapper.style.visibility = 'hidden';
+            buttonWrapper.style.transform = 'translateY(10px)';
+        });
     });
-
-    card.addEventListener('mouseleave', () => {
-        buttonWrapper.style.opacity = '0';
-        buttonWrapper.style.visibility = 'hidden';
-        buttonWrapper.style.transform = 'translateY(10px)';
-    });
-});
-
+}

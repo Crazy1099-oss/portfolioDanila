@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПФ - Даниила</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mobile.css">
+</head>
+
+<body>
+    <img src="./image/background/backgroundFooter.png" class="background_footer">
+    <div id="particles"></div>
+
+    <header>
+        <section class="container nav">
+            <a href="https://t.me/Nosok_sudbii" target="_blank">
+                <div class="contact_information__telegram contact-btn">
+                    <svg class="svg-nav" width="35" height="35" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_12_19)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM12.43 8.85893C11.2628 9.3444 8.93014 10.3492 5.43189 11.8733C4.86383 12.0992 4.56626 12.3202 4.53917 12.5363C4.49339 12.9015 4.95071 13.0453 5.57348 13.2411C5.65819 13.2678 5.74596 13.2954 5.83594 13.3246C6.44864 13.5238 7.27283 13.7568 7.70129 13.766C8.08994 13.7744 8.52373 13.6142 9.00264 13.2853C12.2712 11.079 13.9584 9.96381 14.0643 9.93977C14.139 9.92281 14.2426 9.90148 14.3128 9.96385C14.3829 10.0262 14.376 10.1443 14.3686 10.176C14.3233 10.3691 12.5281 12.0381 11.5991 12.9018C11.3095 13.171 11.1041 13.362 11.0621 13.4056C10.968 13.5034 10.8721 13.5958 10.78 13.6846C10.2108 14.2333 9.78391 14.6448 10.8036 15.3168C11.2936 15.6397 11.6858 15.9067 12.0769 16.1731C12.5042 16.4641 12.9303 16.7543 13.4816 17.1157C13.6221 17.2078 13.7562 17.3034 13.8869 17.3965C14.3841 17.751 14.8307 18.0694 15.3826 18.0186C15.7032 17.9891 16.0345 17.6876 16.2027 16.7884C16.6002 14.6632 17.3816 10.0585 17.5622 8.16098C17.578 7.99473 17.5581 7.78197 17.5422 7.68857C17.5262 7.59518 17.4928 7.46211 17.3714 7.3636C17.2276 7.24694 17.0056 7.22234 16.9064 7.22408C16.455 7.23203 15.7626 7.47282 12.43 8.85893Z" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12_19">
+                                <rect width="24" height="24" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </a>
+
+            <a href="https://github.com/Crazy1099-oss" target="_blank">
+                <div class="contact_information__git contact-btn">
+                    <svg class="svg-nav" width="35" height="35" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_12_20)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12.0099 0C5.36875 0 0 5.40833 0 12.0992C0 17.4475 3.43994 21.9748 8.21205 23.5771C8.80869 23.6976 9.02724 23.3168 9.02724 22.9965C9.02724 22.716 9.00757 21.7545 9.00757 20.7527C5.6667 21.474 4.97099 19.3104 4.97099 19.3104C4.43409 17.9082 3.63858 17.5478 3.63858 17.5478C2.54511 16.8066 3.71823 16.8066 3.71823 16.8066C4.93117 16.8868 5.56763 18.0486 5.56763 18.0486C6.64118 19.8913 8.37111 19.3707 9.06706 19.0501C9.16638 18.2688 9.48473 17.728 9.82275 17.4276C7.15817 17.1471 4.35469 16.1055 4.35469 11.458C4.35469 10.1359 4.8316 9.05428 5.58729 8.21304C5.46807 7.91263 5.0504 6.67043 5.70677 5.00787C5.70677 5.00787 6.72083 4.6873 9.00732 6.24981C9.98625 5.98497 10.9958 5.85024 12.0099 5.84911C13.024 5.84911 14.0577 5.98948 15.0123 6.24981C17.299 4.6873 18.3131 5.00787 18.3131 5.00787C18.9695 6.67043 18.5515 7.91263 18.4323 8.21304C19.2079 9.05428 19.6652 10.1359 19.6652 11.458C19.6652 16.1055 16.8617 17.1269 14.1772 17.4276C14.6148 17.8081 14.9924 18.5292 14.9924 19.6711C14.9924 21.2936 14.9727 22.5957 14.9727 22.9962C14.9727 23.3168 15.1915 23.6976 15.7879 23.5774C20.56 21.9745 23.9999 17.4475 23.9999 12.0992C24.0196 5.40833 18.6312 0 12.0099 0Z" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12_20">
+                                <rect width="24" height="24" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </a>
+
+            <a href="https://vk.ru/id230497167" target="_blank">
+                <div class="contact_information__vk contact-btn">
+                    <svg class="svg-nav" width="35" height="35" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_12_18)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.68707 1.68707C0 3.37414 0 6.08942 0 11.52V12.48C0 17.9106 0 20.6259 1.68707 22.3129C3.37414 24 6.08942 24 11.52 24H12.48C17.9106 24 20.6259 24 22.3129 22.3129C24 20.6259 24 17.9106 24 12.48V11.52C24 6.08942 24 3.37414 22.3129 1.68707C20.6259 0 17.9106 0 12.48 0H11.52C6.08942 0 3.37414 0 1.68707 1.68707ZM4.05005 7.30005C4.18006 13.54 7.30003 17.29 12.77 17.29H13.0801V13.72C15.0901 13.92 16.61 15.39 17.22 17.29H20.0601C19.2801 14.45 17.23 12.88 15.95 12.28C17.23 11.54 19.03 9.74006 19.46 7.30005H16.8799C16.3199 9.28005 14.6601 11.08 13.0801 11.25V7.30005H10.5V14.22C8.90002 13.82 6.88006 11.88 6.79006 7.30005H4.05005Z" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12_18">
+                                <rect width="24" height="24" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </a>
+
+        </section>
+
+        <section class="container header-main">
+            <img src="./image/background/mainBackgroubd.png">
+            <div class="header-main-title">
+                <h1>
+                    Привет, меня зовут <strong>Даниил</strong>
+                    и я <strong>Frontend</strong> разработчик
+                </h1>
+            </div>
+
+            <div class="header-main-subtitle">
+                <p>
+                    ниже вы можете ознакомиться
+                    с работами или подобрать интересующий вас дизайн
+                </p>
+            </div>
+
+            <div class="header-main-button">
+                <a href="https://github.com/Crazy1099-oss" target="_blank">
+                    <button class="btn btn-dark">
+                        <div class="btn-wraper">
+                            <svg width="25" height="25" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_12_20)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.0099 0C5.36875 0 0 5.40833 0 12.0992C0 17.4475 3.43994 21.9748 8.21205 23.5771C8.80869 23.6976 9.02724 23.3168 9.02724 22.9965C9.02724 22.716 9.00757 21.7545 9.00757 20.7527C5.6667 21.474 4.97099 19.3104 4.97099 19.3104C4.43409 17.9082 3.63858 17.5478 3.63858 17.5478C2.54511 16.8066 3.71823 16.8066 3.71823 16.8066C4.93117 16.8868 5.56763 18.0486 5.56763 18.0486C6.64118 19.8913 8.37111 19.3707 9.06706 19.0501C9.16638 18.2688 9.48473 17.728 9.82275 17.4276C7.15817 17.1471 4.35469 16.1055 4.35469 11.458C4.35469 10.1359 4.8316 9.05428 5.58729 8.21304C5.46807 7.91263 5.0504 6.67043 5.70677 5.00787C5.70677 5.00787 6.72083 4.6873 9.00732 6.24981C9.98625 5.98497 10.9958 5.85024 12.0099 5.84911C13.024 5.84911 14.0577 5.98948 15.0123 6.24981C17.299 4.6873 18.3131 5.00787 18.3131 5.00787C18.9695 6.67043 18.5515 7.91263 18.4323 8.21304C19.2079 9.05428 19.6652 10.1359 19.6652 11.458C19.6652 16.1055 16.8617 17.1269 14.1772 17.4276C14.6148 17.8081 14.9924 18.5292 14.9924 19.6711C14.9924 21.2936 14.9727 22.5957 14.9727 22.9962C14.9727 23.3168 15.1915 23.6976 15.7879 23.5774C20.56 21.9745 23.9999 17.4475 23.9999 12.0992C24.0196 5.40833 18.6312 0 12.0099 0Z" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_12_20">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            перейти в мой git
+                        </div>
+                    </button>
+                </a>
+                
+                <button class="btn btn-light">
+                    <a href="#my-works">
+                        <div class="btn-wraper btn-icons-files">
+                        <svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18 10.41V17C18 17.7956 17.6839 18.5587 17.1213 19.1213C16.5587 19.6839 15.7956 20 15 20H9C8.20435 20 7.44129 19.6839 6.87868 19.1213C6.31607 18.5587 6 17.7956 6 17V7C6 6.20435 6.31607 5.44129 6.87868 4.87868C7.44129 4.31607 8.20435 4 9 4H11.59C11.8523 4.0011 12.1037 4.10526 12.29 4.29L17.71 9.71C17.8947 9.89626 17.9989 10.1477 18 10.41Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                stroke-linecap="round" />
+                            <path
+                                d="M12 4.48003V9.00003C12 9.26524 12.1054 9.5196 12.2929 9.70713C12.4804 9.89467 12.7348 10 13 10H17.52C17.5591 9.99948 17.5973 9.98745 17.6296 9.96544C17.662 9.94343 17.6872 9.9124 17.7021 9.8762C17.717 9.84 17.721 9.80022 17.7135 9.76179C17.706 9.72337 17.6874 9.68798 17.66 9.66003L12.34 4.34003C12.312 4.31262 12.2767 4.29402 12.2382 4.28653C12.1998 4.27904 12.16 4.283 12.1238 4.2979C12.0876 4.31281 12.0566 4.33801 12.0346 4.37038C12.0126 4.40276 12.0005 4.44088 12 4.48003Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M14.5 17H9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M12.5 14H9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        посмотреть портфолио
+                    </div>
+                    </a>
+                </button>
+
+
+
+            </div>
+        </section>
+
+        <section class="container header-footnote">
+            <span>10+ <br>работ</span>
+            <span>4+ мессенджера <br>удобная связь</span>
+            <span>6+ <br>стек</span>
+        </section>
+    </header>
+
+    <main>
+        <section class="container filter-wraper">
+            <div id="my-works" class="filter-wraper-title">
+                <h2>Галерея портфолио </h2>
+                <p>выберете из фильров нужный для вас вариант</p>
+            </div>
+
+            <div class="filter-wraper-button">
+                <button class="btn-filter btn-filter-active">все работы</button>
+                <button class="btn-filter">js</button>
+                <button class="btn-filter">react</button>
+                <button class="btn-filter">дизайн</button>
+                <button class="btn-filter">blender</button>
+            </div>
+
+            <div class="filter-wraper-cards">
+                <div class="filter-wraper-work">
+
+                    <div class="work-card">
+                        <div class="work-card-button-wraper">
+                            <div class="work-card-button">
+                                <a href="https://qynara.ru/" target="_blank">
+                                    <button class="btn btn-light">
+                                        <div class="btn-wraper">
+                                            <svg width="25" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M17.6569 8.15392L20.0893 10.5864C20.4644 10.9614 20.6751 11.4702 20.6751 12.0006C20.6751 12.531 20.4644 13.0397 20.0893 13.4148L17.6569 15.8472C16.1566 17.3475 14.1217 18.1904 12 18.1904C9.87827 18.1904 7.84344 17.3475 6.34315 15.8472L3.9107 13.4148C3.53563 13.0397 3.32491 12.531 3.32491 12.0006C3.32491 11.4702 3.53563 10.9614 3.9107 10.5864L6.34315 8.15392C7.84344 6.65363 9.87827 5.81078 12 5.81078C14.1217 5.81078 16.1566 6.65363 17.6569 8.15392Z"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M12 14.5C13.3807 14.5 14.5 13.3807 14.5 12C14.5 10.6193 13.3807 9.5 12 9.5C10.6193 9.5 9.5 10.6193 9.5 12C9.5 13.3807 10.6193 14.5 12 14.5Z"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                            перейти на сайт
+                                        </div>
+                                    </button>
+                                </a>
+                                <button class="btn btn-dark">
+                                    <div class="btn-wraper btn-light-filter">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16 10.5C17.3261 10.5 18.5979 11.0268 19.5355 11.9645C20.4732 12.9021 21 14.1739 21 15.5C21 16.1566 20.8707 16.8068 20.6194 17.4134C20.3681 18.02 19.9998 18.5712 19.5355 19.0355C19.0712 19.4998 18.52 19.8681 17.9134 20.1194C17.3068 20.3707 16.6566 20.5 16 20.5H8C6.67392 20.5 5.40215 19.9732 4.46447 19.0355C3.52678 18.0979 3 16.8261 3 15.5C3 14.1739 3.52678 12.9021 4.46447 11.9645C5.40215 11.0268 6.67392 10.5 8 10.5"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M11.73 3.5V15.5" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.13 7.1L11.73 3.5L15.33 7.1" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        перейти в git
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                        <img class="image-work" src="./image/works/qynara.svg" alt="qynara-bot">
+                    </div>
+
+                    <div class="work-card">
+                        <div class="work-card-button-wraper">
+                            <div class="work-card-button">
+                                <a href="https://ege-sphere.ru/" target="_blank">
+                                    <button class="btn btn-light">
+                                        <div class="btn-wraper">
+                                            <svg width="25" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M17.6569 8.15392L20.0893 10.5864C20.4644 10.9614 20.6751 11.4702 20.6751 12.0006C20.6751 12.531 20.4644 13.0397 20.0893 13.4148L17.6569 15.8472C16.1566 17.3475 14.1217 18.1904 12 18.1904C9.87827 18.1904 7.84344 17.3475 6.34315 15.8472L3.9107 13.4148C3.53563 13.0397 3.32491 12.531 3.32491 12.0006C3.32491 11.4702 3.53563 10.9614 3.9107 10.5864L6.34315 8.15392C7.84344 6.65363 9.87827 5.81078 12 5.81078C14.1217 5.81078 16.1566 6.65363 17.6569 8.15392Z"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M12 14.5C13.3807 14.5 14.5 13.3807 14.5 12C14.5 10.6193 13.3807 9.5 12 9.5C10.6193 9.5 9.5 10.6193 9.5 12C9.5 13.3807 10.6193 14.5 12 14.5Z"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                            перейти на сайт
+                                        </div>
+                                    </button>
+                                </a>
+                                <button class="btn btn-dark">
+                                    <div class="btn-wraper btn-light-filter">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16 10.5C17.3261 10.5 18.5979 11.0268 19.5355 11.9645C20.4732 12.9021 21 14.1739 21 15.5C21 16.1566 20.8707 16.8068 20.6194 17.4134C20.3681 18.02 19.9998 18.5712 19.5355 19.0355C19.0712 19.4998 18.52 19.8681 17.9134 20.1194C17.3068 20.3707 16.6566 20.5 16 20.5H8C6.67392 20.5 5.40215 19.9732 4.46447 19.0355C3.52678 18.0979 3 16.8261 3 15.5C3 14.1739 3.52678 12.9021 4.46447 11.9645C5.40215 11.0268 6.67392 10.5 8 10.5"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M11.73 3.5V15.5" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.13 7.1L11.73 3.5L15.33 7.1" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        перейти в git
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                        <img class="image-work" src="./image/works/ege-school.svg" alt="ege-school">
+                    </div>
+
+                    <div class="work-card">
+                        <div class="work-card-button-wraper">
+                            <div class="work-card-button">
+                                <a href="https://cation-school.online/" target="_blank">
+                                    <button class="btn btn-light">
+                                        <div class="btn-wraper">
+                                            <svg width="25" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M17.6569 8.15392L20.0893 10.5864C20.4644 10.9614 20.6751 11.4702 20.6751 12.0006C20.6751 12.531 20.4644 13.0397 20.0893 13.4148L17.6569 15.8472C16.1566 17.3475 14.1217 18.1904 12 18.1904C9.87827 18.1904 7.84344 17.3475 6.34315 15.8472L3.9107 13.4148C3.53563 13.0397 3.32491 12.531 3.32491 12.0006C3.32491 11.4702 3.53563 10.9614 3.9107 10.5864L6.34315 8.15392C7.84344 6.65363 9.87827 5.81078 12 5.81078C14.1217 5.81078 16.1566 6.65363 17.6569 8.15392Z"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M12 14.5C13.3807 14.5 14.5 13.3807 14.5 12C14.5 10.6193 13.3807 9.5 12 9.5C10.6193 9.5 9.5 10.6193 9.5 12C9.5 13.3807 10.6193 14.5 12 14.5Z"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                            перейти на сайт
+                                        </div>
+                                    </button>
+                                </a>
+                                <button class="btn btn-dark">
+                                    <div class="btn-wraper btn-light-filter">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16 10.5C17.3261 10.5 18.5979 11.0268 19.5355 11.9645C20.4732 12.9021 21 14.1739 21 15.5C21 16.1566 20.8707 16.8068 20.6194 17.4134C20.3681 18.02 19.9998 18.5712 19.5355 19.0355C19.0712 19.4998 18.52 19.8681 17.9134 20.1194C17.3068 20.3707 16.6566 20.5 16 20.5H8C6.67392 20.5 5.40215 19.9732 4.46447 19.0355C3.52678 18.0979 3 16.8261 3 15.5C3 14.1739 3.52678 12.9021 4.46447 11.9645C5.40215 11.0268 6.67392 10.5 8 10.5"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M11.73 3.5V15.5" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.13 7.1L11.73 3.5L15.33 7.1" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        перейти в git
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                        <img class="image-work" src="./image/works/cation-school.svg" alt="cation-school">
+                    </div>
+
+                    <div class="work-card">
+                        <div class="work-card-button-wraper">
+                            <div class="work-card-button">
+                                <a href="https://elbrus-zapchasti.ru/" target="_blank">
+                                    <button class="btn btn-light">
+                                        <div class="btn-wraper">
+                                            <svg width="25" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M17.6569 8.15392L20.0893 10.5864C20.4644 10.9614 20.6751 11.4702 20.6751 12.0006C20.6751 12.531 20.4644 13.0397 20.0893 13.4148L17.6569 15.8472C16.1566 17.3475 14.1217 18.1904 12 18.1904C9.87827 18.1904 7.84344 17.3475 6.34315 15.8472L3.9107 13.4148C3.53563 13.0397 3.32491 12.531 3.32491 12.0006C3.32491 11.4702 3.53563 10.9614 3.9107 10.5864L6.34315 8.15392C7.84344 6.65363 9.87827 5.81078 12 5.81078C14.1217 5.81078 16.1566 6.65363 17.6569 8.15392Z"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M12 14.5C13.3807 14.5 14.5 13.3807 14.5 12C14.5 10.6193 13.3807 9.5 12 9.5C10.6193 9.5 9.5 10.6193 9.5 12C9.5 13.3807 10.6193 14.5 12 14.5Z"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                            перейти на сайт
+                                        </div>
+                                    </button>
+                                </a>
+                                <button class="btn btn-dark">
+                                    <div class="btn-wraper btn-light-filter">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16 10.5C17.3261 10.5 18.5979 11.0268 19.5355 11.9645C20.4732 12.9021 21 14.1739 21 15.5C21 16.1566 20.8707 16.8068 20.6194 17.4134C20.3681 18.02 19.9998 18.5712 19.5355 19.0355C19.0712 19.4998 18.52 19.8681 17.9134 20.1194C17.3068 20.3707 16.6566 20.5 16 20.5H8C6.67392 20.5 5.40215 19.9732 4.46447 19.0355C3.52678 18.0979 3 16.8261 3 15.5C3 14.1739 3.52678 12.9021 4.46447 11.9645C5.40215 11.0268 6.67392 10.5 8 10.5"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M11.73 3.5V15.5" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.13 7.1L11.73 3.5L15.33 7.1" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        перейти в git
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                        <img class="image-work" src="./image/works/elbrus.svg" alt="elbrus">
+                    </div>
+
+                    <div class="work-card">
+                        <div class="work-card-button-wraper">
+                            <div class="work-card-button">
+                                <a href="https://nerralaw.ru/" target="_blank">
+                                    <button class="btn btn-light">
+                                        <div class="btn-wraper">
+                                            <svg width="25" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M17.6569 8.15392L20.0893 10.5864C20.4644 10.9614 20.6751 11.4702 20.6751 12.0006C20.6751 12.531 20.4644 13.0397 20.0893 13.4148L17.6569 15.8472C16.1566 17.3475 14.1217 18.1904 12 18.1904C9.87827 18.1904 7.84344 17.3475 6.34315 15.8472L3.9107 13.4148C3.53563 13.0397 3.32491 12.531 3.32491 12.0006C3.32491 11.4702 3.53563 10.9614 3.9107 10.5864L6.34315 8.15392C7.84344 6.65363 9.87827 5.81078 12 5.81078C14.1217 5.81078 16.1566 6.65363 17.6569 8.15392Z"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M12 14.5C13.3807 14.5 14.5 13.3807 14.5 12C14.5 10.6193 13.3807 9.5 12 9.5C10.6193 9.5 9.5 10.6193 9.5 12C9.5 13.3807 10.6193 14.5 12 14.5Z"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                            перейти на сайт
+                                        </div>
+                                    </button>
+                                </a>
+                                <button class="btn btn-dark">
+                                    <div class="btn-wraper btn-light-filter">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16 10.5C17.3261 10.5 18.5979 11.0268 19.5355 11.9645C20.4732 12.9021 21 14.1739 21 15.5C21 16.1566 20.8707 16.8068 20.6194 17.4134C20.3681 18.02 19.9998 18.5712 19.5355 19.0355C19.0712 19.4998 18.52 19.8681 17.9134 20.1194C17.3068 20.3707 16.6566 20.5 16 20.5H8C6.67392 20.5 5.40215 19.9732 4.46447 19.0355C3.52678 18.0979 3 16.8261 3 15.5C3 14.1739 3.52678 12.9021 4.46447 11.9645C5.40215 11.0268 6.67392 10.5 8 10.5"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M11.73 3.5V15.5" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.13 7.1L11.73 3.5L15.33 7.1" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        перейти в git
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                        <img class="image-work" src="./image/works/nerra.svg" alt="nerra">
+                    </div>
+
+                    <div class="work-card">
+                        <div class="work-card-button-wraper">
+                            <div class="work-card-button">
+                                <a href="https://batmanovboxingclub.tilda.ws/" target="_blank">
+                                    <button class="btn btn-light">
+                                        <div class="btn-wraper">
+                                            <svg width="25" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M17.6569 8.15392L20.0893 10.5864C20.4644 10.9614 20.6751 11.4702 20.6751 12.0006C20.6751 12.531 20.4644 13.0397 20.0893 13.4148L17.6569 15.8472C16.1566 17.3475 14.1217 18.1904 12 18.1904C9.87827 18.1904 7.84344 17.3475 6.34315 15.8472L3.9107 13.4148C3.53563 13.0397 3.32491 12.531 3.32491 12.0006C3.32491 11.4702 3.53563 10.9614 3.9107 10.5864L6.34315 8.15392C7.84344 6.65363 9.87827 5.81078 12 5.81078C14.1217 5.81078 16.1566 6.65363 17.6569 8.15392Z"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M12 14.5C13.3807 14.5 14.5 13.3807 14.5 12C14.5 10.6193 13.3807 9.5 12 9.5C10.6193 9.5 9.5 10.6193 9.5 12C9.5 13.3807 10.6193 14.5 12 14.5Z"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                            перейти на сайт
+                                        </div>
+                                    </button>
+                                </a>
+                                <button class="btn btn-dark">
+                                    <div class="btn-wraper btn-light-filter">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16 10.5C17.3261 10.5 18.5979 11.0268 19.5355 11.9645C20.4732 12.9021 21 14.1739 21 15.5C21 16.1566 20.8707 16.8068 20.6194 17.4134C20.3681 18.02 19.9998 18.5712 19.5355 19.0355C19.0712 19.4998 18.52 19.8681 17.9134 20.1194C17.3068 20.3707 16.6566 20.5 16 20.5H8C6.67392 20.5 5.40215 19.9732 4.46447 19.0355C3.52678 18.0979 3 16.8261 3 15.5C3 14.1739 3.52678 12.9021 4.46447 11.9645C5.40215 11.0268 6.67392 10.5 8 10.5"
+                                                stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M11.73 3.5V15.5" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.13 7.1L11.73 3.5L15.33 7.1" stroke="white" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        перейти в git
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                        <img class="image-work" src="./image/works/batmanovboxingclub.svg" alt="batmanovboxingclub">
+                    </div>
+
+                </div>
+
+                <div class="error-wraper" style="display: none;">
+                    <h3>OOPPSSSS...</h3>
+                    <p>тут пока ничего нету, но вы можете<br>
+                        посмотреть другие работы</p>
+                    <img src="./image/error/errorImage.png" alt="error">
+                </div>
+
+                <div class="btn-all-cards">
+                    <button class="btn btn-light">
+                        <div class="btn-wraper">
+                            <svg width="25" height="25" viewBox="0 0 18 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.75 11.75V2.75C0.75 2.21957 0.960714 1.71086 1.33579 1.33579C1.71086 0.960714 2.21957 0.750001 2.75 0.750001H6.92C7.18391 0.749792 7.44526 0.801816 7.68897 0.903077C7.93268 1.00434 8.15394 1.15283 8.34 1.34L10.16 3.16C10.3461 3.34717 10.5673 3.49566 10.811 3.59692C11.0547 3.69818 11.3161 3.75021 11.58 3.75H14.75C15.2804 3.75 15.7891 3.96071 16.1642 4.33579C16.5393 4.71086 16.75 5.21957 16.75 5.75V11.75C16.75 12.2804 16.5393 12.7891 16.1642 13.1642C15.7891 13.5393 15.2804 13.75 14.75 13.75H2.75C2.21957 13.75 1.71086 13.5393 1.33579 13.1642C0.960714 12.7891 0.75 12.2804 0.75 11.75Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            смотреть больше работ
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-wraper">
+            <h2>отзывы</h2>
+            <p>отзывы людей с которыми мы совместно <br>
+                разрабатывали проект
+            </p>
+
+            <div class="reviews-card">
+                <h3>Юрий</h3>
+                <div>Все быстро и в срок, советую! Буду обращаться</div>
+                <div class="reviews-card-tag">YouDo</div>
+            </div>
+
+            <div class="reviews-card">
+                <h3>Андрей</h3>
+                <div>Спасибо Даниилу, работу выполнил точно по ТЗ, и в оговоренный срок, всё супер )</div>
+                <div class="reviews-card-tag">YouDo</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

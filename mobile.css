@@ -1,0 +1,359 @@
+@media (max-width: 768px) {
+    .container {
+        width: auto;
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    h1 {
+        font-size: clamp(28px, 7vw, 38px);
+        line-height: 1.18;
+    }
+
+    h2 {
+        font-size: clamp(25px, 6vw, 32px);
+        line-height: 1.2;
+    }
+
+    img {
+        max-width: 500px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.55;
+    }
+
+    .header-main img {
+        width: 300px;
+    }
+
+    .background_footer {
+        max-width: 100px;
+        opacity: 0.35;
+    }
+
+    .nav {
+        width: 100%;
+        height: auto;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .contact-btn svg,
+    .svg-nav {
+        width: 30px;
+        height: 30px;
+    }
+
+    .header-main {
+        width: 100%;
+        max-width: 550px;
+        margin: 70px auto 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    .header-main>img {
+        top: -100px;
+    }
+
+    .header-main-title,
+    .header-main-subtitle {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .header-main-title h1 {
+        font-size: clamp(27px, 7.5vw, 36px);
+    }
+
+    .header-main-subtitle {
+        margin-top: 18px;
+        margin-bottom: 28px;
+    }
+
+    .header-main-button {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 14px;
+    }
+
+    .header-main-button>a,
+    .header-main-button>button,
+    .header-main-button .btn {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 0 !important;
+    }
+
+    .header-main-button .btn-wraper {
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        line-height: 1.3;
+    }
+
+    .header-main-button .btn svg {
+        flex: 0 0 auto;
+        width: 21px;
+        height: 21px;
+    }
+
+    .header-footnote {
+        width: auto;
+        margin: 42px 20px 0;
+        padding: 18px 0 0;
+        gap: 10px;
+        justify-content: space-between;
+        font-size: 18px;
+        line-height: 1.4;
+        box-sizing: border-box;
+    }
+
+    .header-footnote span {
+        flex: 1;
+        min-width: 0;
+    }
+
+    /* Галерея */
+    .filter-wraper {
+        margin-top: 90px;
+    }
+
+    .filter-wraper-title {
+        text-align: center;
+    }
+
+    .filter-wraper-title p {
+        margin: 10px 0 20px;
+    }
+
+    .filter-wraper-button {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 16px;
+        margin-bottom: 28px;
+        padding: 14px 12px;
+        box-sizing: border-box;
+    }
+
+    .btn-filter {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .filter-wraper-cards,
+    .filter-wraper-work {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+
+
+    .work-card {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 390 / 220;
+        box-sizing: border-box;
+    }
+
+    .work-card .image-work,
+    .work-card>img {
+        width: 100%;
+        height: 100%;
+        inset: 0;
+        object-fit: cover;
+    }
+
+    /* --------------------------------------------------- */
+
+
+    .work-card-button {
+        width: 65%;
+    }
+
+    .work-card-button button {
+        height: 50px;
+        margin: 15px 0;
+    }
+
+    .work-card-button>a,
+    .work-card-button>button {
+        flex: 1 1 120px;
+        min-width: 0;
+        margin: 0 !important;
+    }
+
+    .work-card-button .btn {
+        width: 100%;
+        padding: 8px 10px;
+        box-sizing: border-box;
+    }
+
+    .work-card-button .btn-wraper {
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .work-card-button svg {
+        width: 17px;
+        height: 17px;
+        margin: 0;
+    }
+
+    .btn-all-cards {
+        margin-top: 30px;
+    }
+
+    .btn-all-cards .btn {
+        max-width: 100%;
+        padding: 12px 14px;
+        font-size: 14px;
+    }
+
+    .btn-all-cards .btn-wraper {
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    /* Пустая категория */
+    .error-wraper h3 {
+        font-size: clamp(34px, 10vw, 52px);
+    }
+
+    .error-wraper p {
+        font-size: 15px;
+    }
+
+    .error-wraper img {
+        width: min(100%, 300px);
+        height: auto;
+    }
+
+    /* Отзывы */
+    .footer-wraper {
+        margin-top: 85px;
+        margin-bottom: 70px;
+    }
+
+    .footer-wraper>h2,
+    .footer-wraper>p {
+        text-align: center;
+    }
+
+    .footer-wraper>p br {
+        display: none;
+    }
+
+    .reviews-card {
+        margin-top: 22px;
+        padding: 16px;
+        box-sizing: border-box;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .reviews-card h3 {
+        font-size: 22px;
+    }
+
+    .reviews-card-tag {
+        right: 12px;
+        top: 12px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 420px) {
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header-main {
+        margin-top: 52px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header-main-title h1 {
+        font-size: 28px;
+    }
+
+    .header-main-subtitle {
+        margin-bottom: 24px;
+    }
+
+    .header-footnote {
+        margin-left: 16px;
+        margin-right: 16px;
+        font-size: 12px;
+    }
+
+    .filter-wraper {
+        margin-top: 72px;
+    }
+
+    .filter-wraper-button {
+        gap: 6px 12px;
+        padding: 12px 8px;
+    }
+
+    .btn-filter {
+        font-size: 14px;
+    }
+
+    .work-card-button-wraper {
+        padding: 8px;
+    }
+
+    .work-card-button {
+        gap: 6px;
+    }
+
+    .work-card-button .btn {
+        font-size: 18px;
+        padding: 7px 6px;
+    }
+
+    .work-card-button svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Планшеты: две карточки в ряд, если хватает места */
+@media (min-width: 600px) and (max-width: 768px) {
+    .filter-wraper-work {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+    }
+
+    .work-card-button-wraper {
+        padding: 8px;
+    }
+
+    .work-card-button {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .work-card-button>a,
+    .work-card-button>button {
+        flex: none;
+        width: 100%;
+    }
+}

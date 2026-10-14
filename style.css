@@ -1,0 +1,421 @@
+@font-face {
+    font-family: "Involve";
+    src: url("./fonts/Involve-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Involve";
+    src: url("./fonts/Involve-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Involve";
+    src: url("./fonts/Involve-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Involve";
+    src: url("./fonts/Involve-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+/*--------------- Global ---------------*/
+* {
+    font-family: "Involve", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 40px;
+    color: #272F42;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 35px;
+    color: #272F42;
+}
+
+p {
+    color: #B4B4B5;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-light a {
+    color: #272F42;
+}
+
+.svg-nav {
+    fill: #272F42;
+}
+
+.title {
+    font-family: "Involve", sans-serif;
+    font-weight: 700;
+}
+
+.container {
+    margin: auto;
+    padding: 0 50px;
+    max-width: 1400px;
+}
+
+svg {
+    transition: 0.3s;
+}
+
+.btn {
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 10px 17px rgb(179, 179, 179);
+    transition: 0.35s;
+    color: #272F42;
+}
+
+.btn svg {
+    margin-right: 5px;
+}
+
+.btn-wraper {
+    display: flex;
+}
+
+.btn-light {
+    background-color: rgb(255, 255, 255);
+    color: #272F42;
+}
+
+.btn-dark {
+    background-color: #272F42;
+    color: white;
+}
+
+.btn-light:hover {
+    background-color: #4AD19E;
+    color: rgb(255, 255, 255);
+}
+
+.btn-dark:hover {
+    background-color: #4AD19E;
+}
+
+.btn-dark svg {
+    fill: white;
+}
+
+.btn-light-filter svg {
+    fill: none;
+}
+
+/*--------------- Header ---------------*/
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 90px;
+}
+
+.contact-btn {
+    cursor: pointer;
+    width: fit-content;
+}
+
+.contact-btn svg:hover {
+    width: 55px;
+    height: 55px;
+    fill: #4AD19E;
+}
+
+.background_footer {
+    position: fixed;
+    z-index: -999;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    opacity: 0.7;
+}
+
+.header-main {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 550px;
+    margin-top: 200px;
+}
+
+.header-main img {
+    position: absolute;
+    z-index: -999;
+    top: -200px;
+}
+
+.header-main-title {
+    width: 550px;
+    text-align: center;
+}
+
+.header-main-title h1 strong {
+    color: #4AD19E;
+}
+
+.header-main-subtitle {
+    width: 450px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.header-main-button {
+    width: 100%;
+    text-align: center;
+}
+
+.header-main-button .btn:first-child {
+    margin-right: 45px;
+}
+
+.header-footnote {
+    width: 550px;
+    margin-top: 70px;
+    padding-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #c7c7c7;
+    color: #272F42;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/*--------------- Main ---------------*/
+.filter-wraper-work {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 115px;
+    row-gap: 45px;
+}
+
+.work-card {
+    width: 390px;
+    height: 220px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 17px rgb(179, 179, 179);
+    overflow: hidden;
+    transition: 0.3s;
+    position: relative;
+}
+
+.work-card img {
+    width: 390px;
+    height: 220px;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.work-card:hover {
+    background-color: rgba(0, 0, 0, 0.247);
+}
+
+.work-card:hover .image-work {
+    transform: scale(1.1);
+}
+
+.work-card-button button {
+    box-shadow: none;
+}
+
+.work-card-button-wraper {
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition:
+        opacity 0.5s ease,
+        transform 0.5s ease,
+        visibility 0.5s ease;
+}
+
+.work-card-button-wraper button {
+    margin: auto;
+    display: block;
+}
+
+.work-card-button-wraper button:last-child {
+    margin-top: 20px;
+}
+
+
+.filter-wraper {
+    margin-top: 210px;
+}
+
+.filter-wraper-title p {
+    margin: 10px 0;
+}
+
+.filter-wraper-button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 17px rgb(179, 179, 179);
+    background-color: rgb(255, 255, 255, 0.6);
+    margin-bottom: 50px;
+}
+
+.btn-filter {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    color: #B4B4B5;
+    margin-right: 25px;
+    transition: 0.35s;
+}
+
+.btn-filter:hover {
+    color: #272F42;
+}
+
+.btn-filter-active {
+    color: #4AD19E;
+}
+
+.btn-filter-active:hover {
+    color: #4AD19E;
+}
+
+.error-wraper {
+    text-align: center;
+}
+
+h3 {
+    font-size: 66px;
+    color: #B4B4B5;
+}
+
+.error-wraper p {
+    font-size: 18px;
+}
+
+.error-wraper img {
+    width: 380px;
+    opacity: 0.8;
+}
+
+.btn-all-cards {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/*--------------- Footer ---------------*/
+.footer-wraper {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.reviews-card {
+    margin-top: 50px;
+    box-shadow: 5px 5px 17px rgb(179, 179, 179);
+    background-color: rgb(255, 255, 255, 0.6);
+    border-radius: 8px;
+    width: 100%;
+    padding: 15px 15px;
+    color: #272F42;
+    position: relative;
+}
+
+.reviews-card-tag {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    background-color: #272F42;
+    color: white;
+    padding: 1px 8px;
+    border-radius: 8px;
+    font-weight: 400;
+}
+
+.reviews-card h3 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.reviews-card div {
+    margin: 15px 0;
+}
+
+.reviews-card h3,
+.reviews-card span {
+    color: #272F42;
+}
+
+/*--------------- Animation ---------------*/
+#particles {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.particle {
+    position: absolute;
+    bottom: -30px;
+
+    width: 8px;
+    height: 8px;
+
+    background: #4AD19E;
+    border-radius: 50%;
+
+    opacity: 0.5;
+
+    filter: blur(1px);
+
+    animation: floatUp linear infinite;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.5;
+    }
+
+    80% {
+        opacity: 0.4;
+    }
+
+    100% {
+        transform: translateY(-110vh) scale(0.5);
+        opacity: 0;
+    }
+}

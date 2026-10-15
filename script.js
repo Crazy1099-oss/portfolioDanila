@@ -31,36 +31,37 @@ for (let i = 0; i < particleCount; i++) {
     particles.appendChild(particle);
 }
 
+
 const workCards = document.querySelectorAll('.work-card');
-const touchMode = window.matchMedia('(hover: none), (pointer: coarse)').matches;
+const touchMode = window.matchMedia(
+    '(hover: none), (pointer: coarse)'
+).matches;
 
 if (touchMode) {
-    // На телефоне карточка раскрывается по нажатию.
-    workCards.forEach(card => {
-        card.addEventListener('click', event => {
-            // Нажатие на ссылку или кнопку выполняет её обычное действие.
-            if (event.target.closest('a, button')) return;
+    // Обрабатываем нажатия по всей странице
+    document.addEventListener('click', (event) => {
+        const clickedCard = event.target.closest('.work-card');
 
-            const wasActive = card.classList.contains('is-active');
+        // Нажатие на кнопку или ссылку — не блокируем действие
+        if (event.target.closest('a, button')) return;
 
-            // Сначала закрываем все карточки и убираем эффекты.
-            workCards.forEach(item => item.classList.remove('is-active'));
-
-            // Если карточка ещё не была открыта — показываем её кнопки.
-            if (!wasActive) card.classList.add('is-active');
+        // Закрываем все карточки
+        workCards.forEach(card => {
+            card.classList.remove('is-active');
         });
-    });
 
-    // Нажатие в любом месте вне карточек закрывает все кнопки и эффекты.
-    document.addEventListener('click', event => {
-        if (!event.target.closest('.work-card')) {
-            workCards.forEach(card => card.classList.remove('is-active'));
+        // Если нажали на закрытую карточку — открываем её
+        if (clickedCard) {
+            clickedCard.classList.add('is-active');
         }
     });
 } else {
-    // На компьютере сохраняем привычный эффект наведения мышью.
+    // Эффект наведения для компьютера
     workCards.forEach(card => {
-        const buttonWrapper = card.querySelector('.work-card-button-wraper');
+        const buttonWrapper = card.querySelector(
+            '.work-card-button-wraper'
+        );
+
         if (!buttonWrapper) return;
 
         card.addEventListener('mouseenter', () => {

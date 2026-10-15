@@ -57,3 +57,28 @@ if (hasHover) {
         });
     });
 }
+
+
+
+const isTouchDevice = window.matchMedia('(hover: none)').matches;
+
+if (isTouchDevice) {
+    workCards.forEach(card => {
+        card.addEventListener('click', (event) => {
+            // Не мешаем нажимать на кнопки и ссылки внутри карточки
+            if (event.target.closest('a, button')) {
+                return;
+            }
+
+            // Закрываем остальные карточки
+            workCards.forEach(otherCard => {
+                if (otherCard !== card) {
+                    otherCard.classList.remove('is-active');
+                }
+            });
+
+            // Переключаем текущую карточку
+            card.classList.toggle('is-active');
+        });
+    });
+}

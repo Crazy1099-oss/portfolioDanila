@@ -26,6 +26,20 @@
         line-height: 1.55;
     }
 
+    .work-card-button-wraper {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        transition: opacity 0.3s ease, transform 0.3s ease,
+            visibility 0.3s ease;
+    }
+
+    .work-card.is-active .work-card-button-wraper {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
     .header-main img {
         width: 300px;
     }
